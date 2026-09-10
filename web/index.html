@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>plan-stack</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <strong>plan-stack</strong>
+        <span class="sub">Speculative wait queue</span>
+      </div>
+    </div>
+    <div class="topbar-meta">
+      <span id="conn" class="pill">connecting…</span>
+      <span id="hub" class="pill muted">wait-hub —</span>
+      <button type="button" id="btn-seed" class="btn">Seed demo</button>
+      <button type="button" id="btn-recalc" class="btn ghost">Simulate recalc</button>
+    </div>
+  </header>
+
+  <p class="lede">
+    Each window is a harness. Columns are agent sessions. Cell height tracks estimated wait —
+    agents register phases, then go silent until earlier remote work returns.
+  </p>
+
+  <main id="windows" class="windows" aria-live="polite"></main>
+
+  <p class="status-strip" id="status-strip" role="status">Loading overview…</p>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

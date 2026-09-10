@@ -1,0 +1,22 @@
+{
+  "name": "plan-stack",
+  "version": "0.1.0",
+  "description": "Speculative agentic wait queue — ETA-sized plan stacks, session columns; consumes wait-hub for completion",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "plan-stackd": "./bin/plan-stackd.js",
+    "plan-stack": "./bin/plan-stack.js"
+  },
+  "scripts": {
+    "start": "node bin/plan-stackd.js --serve",
+    "daemon": "node bin/plan-stackd.js --serve",
+    "cli": "node bin/plan-stack.js",
+    "seed": "node bin/plan-stack.js seed",
+    "ui": "node bin/plan-stackd.js --serve --ui"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

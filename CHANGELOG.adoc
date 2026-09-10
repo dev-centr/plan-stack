@@ -1,0 +1,14 @@
+= Changelog
+
+:toc:
+
+== 2026-09-10 — Initial plan-stack skeleton
+
+* New machine-local **plan-stack** daemon (`plan-stackd`) on port **17358**: speculative multi-phase plans with ETA-sized stacks.
+* Core API: upsert plan, insert/replace/patch/complete phases, recalculate dependents; overview grouped by harness → session.
+* Optional **wait-hub** bind via `phase.waitHubId` (consumes waits; does not replace wait-hub — see ADR 0001).
+* Standalone web UI (session columns, wait-proportional cells, recalc spinner + insert animation) served from the daemon.
+* CLI: `plan-stack` health/status/overview/upsert/seed and phase mutations.
+* Docs: architecture one-pager + ADR 0001.
+
+include::changelog-details/2026-09-10 - initial plan-stack skeleton.adoc[]

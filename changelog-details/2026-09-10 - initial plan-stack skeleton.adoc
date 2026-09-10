@@ -1,0 +1,3 @@
+=== Details
+
+Daemon mirrors the hive-watch / wait-hub localhost IPC pattern (`$CODE_ROOT/plan-stack.*` artifacts). Seed command loads two harness windows for empty-machine demos. Harness dock and HCI-Nerdz teaching suite land in sibling repos.
